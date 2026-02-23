@@ -1,16 +1,136 @@
-# React + Vite
+# 💰 Finance TrackFi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal finance tracker built using **React**, **Firebase**, **Tailwind CSS**, and **Recharts**.
 
-Currently, two official plugins are available:
+Users can securely manage their income and expenses, visualize financial data with charts, and track daily spending trends.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+( Add your Render deployment link here )
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🔐 Firebase Authentication (Email + Google Sign-in)
+- ➕ Add Income & Expenses
+- 🗑 Delete Transactions
+- 🔄 Reset All Transactions
+- 📊 Income vs Expense Pie Chart
+- 📈 Category Breakdown Bar Chart
+- 📉 Daily Trend Line Chart
+- 🔍 Search Transactions
+- 🎯 Filter by Income / Expense
+- ↕ Sort by Date / Amount
+- 📱 Fully Responsive (Mobile Friendly)
+
+---
+
+## 🛠 Tech Stack
+
+- React (Vite)
+- Firebase (Auth + Firestore)
+- Tailwind CSS
+- Recharts
+- React Router
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ │    ├── Dashboard.jsx
+ │    ├── Signin.jsx
+ │    ├── Signup.jsx
+ │    └── Profile.jsx
+ ├── firebase/
+ ├── AuthContext/
+ └── ProtectedRoute/
+```
+
+---
+
+## 🔐 Authentication
+
+This app uses Firebase Authentication:
+
+- Email & Password Login
+- Google Sign-in
+- Protected Routes
+- Persistent Login Session
+
+Each user’s data is securely stored under:
+
+```
+users/{userId}/transactions
+```
+
+---
+
+## 📊 Charts
+
+- Pie Chart → Income vs Expense
+- Bar Chart → Category Breakdown
+- Line Chart → Daily Income & Expense Trends
+
+---
+
+## 📱 Responsive Design
+
+- Mobile-first layout
+- Adaptive grid system
+- Responsive charts
+- Flexible transaction layout
+
+---
+
+## ⚙ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌍 Deployment
+
+Deployed using **Render**.
+
+---
+
+## 📌 Future Improvements
+
+- CSV Export / Import
+- Monthly financial reports
+- Budget limit alerts
+- Dark Mode
+- Advanced analytics
+
+---
+
+## 👨‍💻 Author
+
+Built as a learning project to understand full-stack finance tracking with Firebase & React.
+
+---
+
+⭐ If you like this project, consider giving it a star!
