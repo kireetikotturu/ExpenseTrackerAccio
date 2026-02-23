@@ -1,0 +1,42 @@
+@reference '../../index.css';
+
+.navbar {
+  @apply bg-deepCharcoal fixed top-0 left-0 w-full z-50 
+  text-lightGray h-16 px-4 md:px-10 
+  flex items-center justify-between 
+  shadow-md border-b border-gray-700;
+}
+
+/* Desktop Hover Animation */
+.animationStyle {
+  @apply relative text-sm font-medium cursor-pointer
+  after:absolute after:left-0 after:-bottom-1
+  after:h-[2px] after:w-0
+  after:bg-lightGray
+  after:transition-all after:duration-300
+  hover:after:w-full;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  @apply absolute right-0 mt-3 w-40 bg-white text-black 
+  rounded-md shadow-lg p-2 flex flex-col gap-2;
+}
+
+.dropdown-btn {
+  @apply w-full text-left px-3 py-2 rounded-md 
+  hover:bg-gray-200 font-medium;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  @apply absolute top-16 left-0 w-full 
+  bg-deepCharcoal text-lightGray 
+  flex flex-col gap-4 px-6 py-6 
+  shadow-lg md:hidden;
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  @apply text-base font-medium text-left;
+}
